@@ -33,11 +33,11 @@
 				cube.rotation.y += 0.1;
 				cube2.rotation.x -= 0.01;
 				cube2.rotation.y -= 0.1;
-				for(var i=1; i<15;i++){
+				if(cube.position.x<150){
 					cube.position.x+=0.03;
-					setTimeout(100);
+					setTimeout(100);}
 					
-				}
+			
                 
 				renderer.render(scene, camera);
 			};
