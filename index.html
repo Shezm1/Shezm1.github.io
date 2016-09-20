@@ -33,10 +33,17 @@
 				cube.rotation.y += 0.1;
 				cube2.rotation.x -= 0.01;
 				cube2.rotation.y -= 0.1;
-				if(cube.position.x<15){
+				var check1=true;
+			if(check1){	if(cube.position.x<15){
 					cube.position.x+=0.03;
-					setTimeout(100);}
-					
+					setTimeout(100);
+			if(cube.position.x>15){	check=false;}
+			}}else{    	if(cube.position.x>15){
+					cube.position.x-=0.03;
+					setTimeout(100);
+				if(cube.position.x=0){	check=true;}
+			}
+			}
 			
                 
 				renderer.render(scene, camera);
