@@ -9,6 +9,7 @@
 	<body>
 		<script src="three.js"></script>
 		<script>
+		        var check1=true;
 			var scene = new THREE.Scene();
 			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
 
@@ -33,7 +34,7 @@
 				cube.rotation.y += 0.1;
 				cube2.rotation.x -= 0.01;
 				cube2.rotation.y -= 0.1;
-				var check1=true;
+			
 		if(check1){
 
 			if(cube.position.x<=10){
