@@ -37,13 +37,15 @@
 			if(check1){	if(cube.position.x<=15){
 					cube.position.x+=0.03;
 					setTimeout(100);
-			if(cube.position.x=>15){	check=false;}
-			}}else{    	if(cube.position.x>15){
+			
+			}if(cube.position.x=>15){	check=false;}
+				
+			}else{    	if(cube.position.x>15){
 					cube.position.x-=0.03;
 					setTimeout(100);
-				if(cube.position.x=0){	check=true;}
+				
 			}
-			}
+		if(cube.position.x=0){	check=true;}	}
 			
                 
 				renderer.render(scene, camera);
