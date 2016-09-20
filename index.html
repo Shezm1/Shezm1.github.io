@@ -34,10 +34,10 @@
 				cube2.rotation.x -= 0.01;
 				cube2.rotation.y -= 0.1;
 				var check1=true;
-			if(check1){	if(cube.position.x<15){
+			if(check1){	if(cube.position.x<=15){
 					cube.position.x+=0.03;
 					setTimeout(100);
-			if(cube.position.x>15){	check=false;}
+			if(cube.position.x=>15){	check=false;}
 			}}else{    	if(cube.position.x>15){
 					cube.position.x-=0.03;
 					setTimeout(100);
